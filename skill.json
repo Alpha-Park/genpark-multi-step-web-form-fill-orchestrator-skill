@@ -1,0 +1,39 @@
+{
+  "name": "genpark-multi-step-web-form-fill-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-step web form fill orchestrator with client-side field validation, masked input entry, and atomic submission.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "web-agent",
+  "tags": [
+    "playwright",
+    "form-filler",
+    "web-automation",
+    "kyc-forms",
+    "browser-agent"
+  ],
+  "inputs": {
+    "target_form": {
+      "type": "string"
+    },
+    "field_payloads": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "orchestration_id": {
+      "type": "string"
+    },
+    "steps_completed": {
+      "type": "integer"
+    },
+    "submission_status": {
+      "type": "string"
+    },
+    "execution_audit_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
